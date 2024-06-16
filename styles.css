@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #042334, #addae2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Wrapper */
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Quote Box */
+#quote-box {
+    background: rgb(200, 211, 216);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Quote Text */
+.quote-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.quote-text i {
+    color: #273d52;
+    position: absolute;
+    left: -15px;
+    top: 2px;
+    font-size: 1em;
+}
+
+/* Quote Author */
+.quote-author {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    transition: background 0.3s;
+    cursor: pointer;
+    background: #273d52;
+}
+
+#tweet-quote, #tumblr-quote {
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #quote-box {
+        padding: 15px;
+    }
+
+    .quote-text {
+        font-size: 1.2em;
+    }
+
+    .quote-author {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
